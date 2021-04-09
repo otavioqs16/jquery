@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+</head>
+<body>
+
+	<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Informações pessoais</a></li>
+    <li><a href="#tabs-2">Contato</a></li>
+  </ul>
+  <div id="tabs-1">
+
+  	
+  	Nome: <textarea  rows="1" cols="40" maxlength="1000" id="nome"></textarea>
+  	<br><br>
+  	E-mail: <textarea  rows="1" cols="40" maxlength="1000" id="email"></textarea>
+  	<br><br>
+
+  	Data de nascimento: <input type="text" id="txtData">
+
+  	<br><br>
+
+  	Pretensão Salarial: <input type="text" id="salario" readonly style="border:10;  ">
+  	<br><br>
+
+  	<div id="slider"></div>
+    
+  </div>
+  <div id="tabs-2">
+
+  
+
+  	<div class="ui-widget">
+  		Melhor dia para contato:  <input id="dia">
+	</div>
+
+	<p>Melhor forma de contato: </p>
+
+	<ul id="contato">
+		<li id=" Telefone">Telefone</li>
+		<li id=" Carta">Carta</li>
+		<li id=" Whatsapp">Whatsapp</li>
+		<li id=" E-mail">E-mail</li>
+	</ul>
+
+  
+  </div>
+
+</div>
+<br><br><br>
+<button id="enviar" onclick="enviar()">Enviar</button>
+
+<div  id="info"> </div>
+
+
+
+</body>
+</html>
